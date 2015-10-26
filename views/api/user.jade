@@ -1,0 +1,30 @@
+extends ../layout
+
+block content
+  .page-header
+  .row
+    .col-xs-2
+      br 
+      .thumbnail
+        img(src='#{user.profile_picture}', height='320px')
+    .col-xs-10
+      h2= user.username
+      h4= user.full_name
+      p= user.bio
+
+  
+  .media
+    
+  hr
+  p.lead
+    .row
+      .col-xs-3
+        strong  # Posts
+        p= user.counts.media
+      .col-xs-3
+        strong  # Followers
+        p= user.counts.follows         
+      .col-xs-3
+        strong  # Following
+        p= user.counts.followed_by  
+

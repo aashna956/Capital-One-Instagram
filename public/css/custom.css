@@ -1,0 +1,14 @@
+.jumbotron{
+	background: url('https://img1.etsystatic.com/019/2/7385585/il_fullxfull.481695541_epxw.jpg') no-repeat center center;
+  	height: 300px;
+  	color: #d3d3d3;
+}
+
+.container .jumbotron,
+.container-fluid .jumbotron {
+  border-radius: 0;
+}
+
+.blue{
+	color: #00688B;
+}

@@ -1,0 +1,29 @@
+extends ../layout
+
+block content
+  .page-header
+    h2
+      i.fa.fa-instagram(style='color: #517fa4')
+      | Capital One | Instagram
+    p Click on a user for more information.
+
+    h3= "Positive posts:"+ positive
+    h3= "Negative posts:"+negative 
+    h3= "Neutral posts:"+ neutral
+  .media
+    
+  
+  p.lead
+    strong Recent Images
+    |  on Instagram
+  .row
+    for image in popularImages
+      .col-xs-3
+        a.thumbnail(href='/user/'+image.user.id)
+          img(src='#{image.images.standard_resolution.url}', height='320px')
+        .blue
+          img(src='http://captaincookresto.com/wp-content/uploads/2014/02/instagram-heart-shaped-free-social-media-icon.png', height='20px')
+          = ' '+ image.likes.count + ' likes'
+        br
+        br
+
