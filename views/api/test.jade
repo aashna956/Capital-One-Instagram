@@ -5,17 +5,21 @@ block content
     h2
       i.fa.fa-instagram(style='color: #517fa4')
       | Capital One | Instagram
-    p Click on a user for more information.
 
-    h3= "Positive posts:"+ positive
-    h3= "Negative posts:"+negative 
-    h3= "Neutral posts:"+ neutral
+    ul.list-inline
+      li
+        p.lead="Positive posts:"+ positive
+      li
+        p.lead= "Negative posts:"+negative 
+      li
+        p.lead= "Neutral posts:"+ neutral
   .media
     
   
   p.lead
     strong Recent Images
     |  on Instagram
+  p Click on a picture for user information.
   .row
     for image in popularImages
       .col-xs-3

@@ -1,6 +1,3 @@
-var _ = require('lodash');
-var async = require('async');
-var querystring = require('querystring');
 var results;
 var sentiment=require('./sentiment');
 
